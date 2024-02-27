@@ -1,0 +1,1584 @@
+import React, { useState } from "react";
+import Hotel1 from "../assests/Hotel Images/Hotel1.png";
+import Hotel2 from "../assests/Hotel Images/Hotel2.png";
+import Hotel3 from "../assests/Hotel Images/Hotel3.png";
+import Hotel4 from "../assests/Hotel Images/Hotel4.png";
+import Hotel5 from "../assests/Hotel Images/Hotel5.png";
+
+import Hotel6 from "../assests/Hotel Images/Hotel6.png";
+import { Link,useNavigate } from "react-router-dom";
+
+import DatePicker from "react-datepicker";
+import "../app.css";
+
+import "react-datepicker/dist/react-datepicker.css";
+
+function Makkah() {
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const [selectedReturnDate, setselectedReturnDate] = useState(null);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+
+  const handleDateReturn = (date) => {
+    setselectedReturnDate(date);
+  };
+
+  // State to hold the counter value
+  const [adultcount, setadultcount] = useState(0);
+  const [childcount, setchildcount] = useState(0);
+  const [infantcount, setinfantcount] = useState(0);
+
+  const [PassengerModal, setPassengerModal] = useState(false);
+
+  // Function to increment the counter
+  const adultincrement = () => {
+    setadultcount(adultcount + 1);
+  };
+
+  // Function to decrement the counter
+  const adultdecrement = () => {
+    if (adultcount > 0) {
+      setadultcount(adultcount - 1);
+    }
+  };
+
+  // Function to increment the counter
+  const childincrement = () => {
+    setchildcount(childcount + 1);
+  };
+
+  // Function to decrement the counter
+  const childdecrement = () => {
+    if (childcount > 0) {
+      setchildcount(childcount - 1);
+    }
+  };
+
+  // Function to increment the counter
+  const infantincrement = () => {
+    setinfantcount(infantcount + 1);
+  };
+
+  // Function to decrement the counter
+  const infantdecrement = () => {
+    if (infantcount > 0) {
+      setinfantcount(infantcount - 1);
+    }
+  };
+
+  const nav = useNavigate();
+
+  const cardDetails = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    nav("/HotelPreviews");
+  };
+
+  return (
+    <>
+
+<div className="md:mt-0  bg-[#699FC9]">
+        <div>
+          <h1
+            id="package_heading"
+            className="md:text-3xl md:p-6 text-xl md:py-8  md:text-left text-center md:mt-0 py-3  font-bold text-white "
+          >
+          Search Flights Around The Globe
+            <br />
+            <span
+              id="find_Best_deal"
+              className="md:text-3xl  text-lg  font-normal"
+            >
+Find Best Deals For Air Ticket            </span>
+          </h1>
+        </div>
+
+        {/* Button Section Start */}
+        <section className=" body-font  md:mx-auto ">
+         
+         
+         <div className="container flex   px-5 py-10 mx-auto">
+        
+        
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+       
+         <div className="p-2 md:h-[60px] md:w-w-full h-16 w-full">
+               <div className="h-full flex items-center  border p-2  cursor-pointer  rounded-lg gap-3">
+                 <div className="   flex justify-center -ml-1 ">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<g id="SVGRepo_iconCarrier">
+<path id="Vector" d="M3 21H5M5 21H10M5 21V3M10 21H14M10 21V16H8C10 13.3333 14 13.3333 16 16H14V21M5 3H3M5 3H19M14 21H19M19 21H21M19 21V3M19 3H21M9 6.5H10M14 6.5H15M9 10.5H10M14 10.5H15" stroke="white" stroke-width="1.42" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
+                 </div>
+                 <div className="flex-grow text-[0.995rem] ">
+                   <select required className="outline-none w-full appearance-none bg-transparent text-white">
+                     <option value="" selected disabled >
+                     City Name                     </option>
+
+                     <option value="">Karachi</option>
+                     <option value="a-value-here">Lahore</option>
+                     <option value="a-value-here">Islamabad</option>
+                     <option value="a-value-here">Sialkot</option>
+                     <option value="a-value-here">Multan</option>
+                     <option value="a-value-here">Peshawar</option>
+                   </select>{" "}
+                 </div>
+               </div>
+             </div>
+
+             <div className="p-2 md:h-[60px] md:w-w-full h-16 w-full text-center">
+               <div className="h-full flex   border p-2.5 hover:bg-gray-50 active:bg-gray-100 cursor-pointer bg-white rounded-lg">
+                 <div className="   flex justify-center mr-4 "></div>
+                 <div className="flex gap-5">
+
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#7E7676"/>
+<g id="Hotel" clip-path="url(#clip0_0_1)">
+<g id="Desktop - 10" clip-path="url(#clip1_0_1)">
+<rect width="1440" height="2686" transform="translate(-622 -279)" fill="#F4F6F7"/>
+<path id="Rectangle 3897" d="M-362 -173H818V202H-362V-173Z" fill="#699FC9"/>
+<g id="Frame 1171275764">
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" fill="white"/>
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" stroke="white"/>
+<g id="Frame 1171275782">
+<g id="Frame" clip-path="url(#clip2_0_1)">
+<g id="SVGRepo_iconCarrier">
+<path id="Vector" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM12 1.67442C6.29734 1.67442 1.67442 6.29734 1.67442 12C1.67442 17.7027 6.29734 22.3256 12 22.3256C17.7027 22.3256 22.3256 17.7027 22.3256 12C22.3256 6.29734 17.7027 1.67442 12 1.67442ZM17.906 7.89911C18.2428 8.20038 18.2716 8.71762 17.9704 9.05441L12.0794 15.6399C11.7589 15.9982 11.2 16.0042 10.8718 15.653L6.86289 11.3628C6.55438 11.0327 6.57193 10.5149 6.90209 10.2064C7.23225 9.89788 7.74999 9.91543 8.05851 10.2456L11.4564 13.8819L16.7508 7.96342C17.052 7.62663 17.5693 7.59784 17.906 7.89911Z" fill="#699FC9"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-622 -279)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-622 -279)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                   <Link  >
+
+
+
+                     <h2 className="text-[#699FC9] text-[0.995rem]">
+                     Check In                     </h2>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+
+             <div className="p-2 md:h-[60px] md:w-w-full h-16 w-full text-center">
+               <div className="h-full flex   border p-2.5 hover:bg-gray-50 active:bg-gray-100 cursor-pointer bg-white rounded-lg">
+                 <div className="   flex justify-center mr-4 "></div>
+                 <div className="flex gap-5">
+
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#7E7676"/>
+<g id="Hotel" clip-path="url(#clip0_0_1)">
+<g id="Desktop - 10" clip-path="url(#clip1_0_1)">
+<rect width="1440" height="2686" transform="translate(-622 -279)" fill="#F4F6F7"/>
+<path id="Rectangle 3897" d="M-362 -173H818V202H-362V-173Z" fill="#699FC9"/>
+<g id="Frame 1171275764">
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" fill="white"/>
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" stroke="white"/>
+<g id="Frame 1171275782">
+<g id="Frame" clip-path="url(#clip2_0_1)">
+<g id="SVGRepo_iconCarrier">
+<path id="Vector" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM12 1.67442C6.29734 1.67442 1.67442 6.29734 1.67442 12C1.67442 17.7027 6.29734 22.3256 12 22.3256C17.7027 22.3256 22.3256 17.7027 22.3256 12C22.3256 6.29734 17.7027 1.67442 12 1.67442ZM17.906 7.89911C18.2428 8.20038 18.2716 8.71762 17.9704 9.05441L12.0794 15.6399C11.7589 15.9982 11.2 16.0042 10.8718 15.653L6.86289 11.3628C6.55438 11.0327 6.57193 10.5149 6.90209 10.2064C7.23225 9.89788 7.74999 9.91543 8.05851 10.2456L11.4564 13.8819L16.7508 7.96342C17.052 7.62663 17.5693 7.59784 17.906 7.89911Z" fill="#699FC9"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-622 -279)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-622 -279)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                   <Link  >
+
+
+
+                     <h2 className="text-[#699FC9] text-[0.995rem]">
+                     Check out                    </h2>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+
+             <div className="p-2 md:h-[60px] md:w-w-full  h-16 w-full">
+              <div
+                  onClick={() => setPassengerModal(true)}
+                  className="h-full flex items-center  border  hover:bg-gray-50 active:bg-gray-100 cursor-pointer bg-white rounded-lg"
+                >
+                  <div className="   flex justify-center ml-2 ">
+                    <svg
+                    className=" "
+                      width="30"
+                      height="30"
+                      viewBox="0 15 25 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        id="city-svgrepo-com (1) 1"
+                        clipPath="url(#clip0_1_403)"
+                      >
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            id="Vector"
+                            d="M6.53125 22.1677C5.96881 22.1677 5.419 22.0042 4.95135 21.6979C4.4837 21.3916 4.11921 20.9563 3.90397 20.4469C3.68873 19.9376 3.63242 19.3771 3.74214 18.8364C3.85187 18.2957 4.12271 17.799 4.52042 17.4092C4.91812 17.0194 5.42483 16.7539 5.97646 16.6463C6.5281 16.5388 7.09988 16.594 7.61951 16.805C8.13913 17.0159 8.58327 17.3732 8.89574 17.8316C9.20822 18.29 9.375 18.8289 9.375 19.3802C9.3741 20.1192 9.0742 20.8277 8.54109 21.3503C8.00798 21.8728 7.28518 22.1668 6.53125 22.1677ZM6.53125 18.1856C6.29021 18.1856 6.05457 18.2557 5.85415 18.3869C5.65373 18.5182 5.49752 18.7048 5.40527 18.9231C5.31303 19.1414 5.28889 19.3816 5.33592 19.6133C5.38294 19.845 5.49902 20.0579 5.66946 20.225C5.83991 20.392 6.05707 20.5058 6.29348 20.5519C6.5299 20.598 6.77495 20.5743 6.99765 20.4839C7.22034 20.3935 7.41069 20.2404 7.54461 20.0439C7.67852 19.8475 7.75 19.6165 7.75 19.3802C7.74964 19.0635 7.62111 18.7599 7.39263 18.5359C7.16415 18.3119 6.85437 18.186 6.53125 18.1856Z"
+                            fill="#699FC9"
+                            stroke="#699FC9"
+                            strokeWidth="0.000444853"
+                          />
+                          <path
+                            id="Vector_2"
+                            d="M16.261 39.9382L13.7147 34.114H7.94474C7.22857 34.1132 6.53265 33.8809 5.96476 33.4532C5.39687 33.0255 4.9887 32.4262 4.80345 31.7481L3.47599 26.8692C3.26425 26.0751 3.38193 25.231 3.8033 24.5217C4.22467 23.8123 4.91545 23.2954 5.72458 23.0839C6.53372 22.8724 7.39537 22.9835 8.12113 23.393C8.8469 23.8025 9.37772 24.477 9.59753 25.2691L10.2704 27.7427H15.0635V29.3355H9.02147L8.0281 25.6793C7.91604 25.2989 7.65632 24.9767 7.30467 24.7818C6.95302 24.587 6.53746 24.535 6.14714 24.637C5.75683 24.739 5.42287 24.987 5.21691 25.3276C5.01096 25.6682 4.94942 26.0744 5.0455 26.459L6.37296 31.3374C6.46567 31.6767 6.66992 31.9766 6.95407 32.1906C7.23821 32.4045 7.58641 32.5207 7.94474 32.5211H14.786L17.7551 39.3109L16.261 39.9382Z"
+                            fill="#699FC9"
+                            stroke="#699FC9"
+                            strokeWidth="0.000444853"
+                          />
+                          <path
+                            id="Vector_3"
+                            d="M22.375 19.7784H19.125V16.5928H17.5V19.7784H14.25V21.3713H17.5V24.5569H19.125V21.3713H22.375V19.7784Z"
+                            fill="#699FC9"
+                            stroke="#699FC9"
+                            strokeWidth="0.000444853"
+                          />
+                          <path
+                            id="Vector_4"
+                            d="M12.6255 37.2996H4.31171C3.9537 37.2993 3.6058 37.1832 3.32191 36.9694C3.03802 36.7556 2.83401 36.456 2.74147 36.117L-0.347656 24.7621L1.22258 24.3518L4.31171 35.7067H12.6255V37.2996Z"
+                            fill="#699FC9"
+                            stroke="#699FC9"
+                            strokeWidth="0.000444853"
+                          />
+                          <path
+                            id="&#60;Transparent Rectangle&#62;"
+                            d="M24 15H-2V40.4853H24V15Z"
+                            stroke="#699FC9"
+                            strokeWidth="0.000444853"
+                          />
+                        </g>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_403">
+                          <rect width="57" height="52" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>{" "}
+                  </div>
+                  <div className="flex-grow ">
+                    <span className="text-gray-900  flex flex-wrap   text-[0.8rem]">
+                      Total Passengers
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+             <div className="p-2 md:h-[60px] md:w-w-full h-16 w-full text-center">
+               <div className="h-full flex   border p-2.5 hover:bg-gray-50 active:bg-gray-100 cursor-pointer bg-white rounded-lg">
+                 <div className="   flex justify-center mr-4 "></div>
+                 <div className="flex gap-5">
+
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#7E7676"/>
+<g id="Hotel" clip-path="url(#clip0_0_1)">
+<g id="Desktop - 10" clip-path="url(#clip1_0_1)">
+<rect width="1440" height="2686" transform="translate(-906 -360)" fill="#F4F6F7"/>
+<path id="Rectangle 3897" d="M-646 -254H534V121H-646V-254Z" fill="#699FC9"/>
+<g id="Frame 1171275768">
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" fill="white"/>
+<rect x="-23.5" y="-15.5" width="257" height="55" rx="7.5" stroke="white"/>
+<g id="Frame 1171275772">
+<g id="Layer_1" clip-path="url(#clip2_0_1)">
+<g id="SVGRepo_iconCarrier">
+<g id="Group">
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M21.9293 22.3197C21.9293 22.517 21.7692 22.6791 21.5699 22.6791H2.32971C2.13244 22.6791 1.97033 22.519 1.97033 22.3197V11.4096C1.56799 11.5639 1.19494 11.5658 0.882442 11.4623C0.638302 11.3803 0.433223 11.2338 0.282833 11.0424C0.132442 10.8529 0.0367391 10.6205 0.0074422 10.3666C-0.0355265 9.97013 0.0836141 9.52091 0.419552 9.10099C0.43713 9.0795 0.456661 9.05997 0.478145 9.04239L11.7281 1.41154C11.8551 1.29435 12.0504 1.28263 12.191 1.39201L23.4606 9.00724C23.4762 9.01896 23.4899 9.03263 23.5035 9.0463C23.9567 9.53458 24.0699 10.0756 23.9606 10.5346C23.9059 10.7592 23.7985 10.9643 23.65 11.1303C23.5016 11.2983 23.3121 11.4272 23.0953 11.5053C22.7516 11.6303 22.3453 11.6244 21.9313 11.4291C21.9293 14.476 21.9293 19.2748 21.9293 22.3197ZM8.85315 8.41739H15.1442V12.6537H8.85315V8.41739ZM10.9918 9.56779C11.1735 9.56779 11.3219 9.71622 11.3219 9.89786C11.3219 10.0795 11.1735 10.2279 10.9918 10.2279C10.8102 10.2279 10.6617 10.0795 10.6617 9.89786C10.6617 9.71427 10.8082 9.56779 10.9918 9.56779ZM12.3805 10.9838L13.1227 9.84318L13.8238 11.6166H10.3863V11.3959L10.6617 11.3822L10.9371 10.7084L11.1559 11.1908H11.568L11.9254 10.269L12.3805 10.9838ZM9.23205 8.85294H14.7692V12.2182H9.23205V8.85294ZM11.9 15.9037C11.9078 15.9057 11.9176 15.9037 11.9254 15.8959C12.3473 15.5658 12.9664 15.7045 13.2496 16.3959H13.2438C12.6852 16.8705 12.2848 17.3861 12.1403 17.9623H11.3317L11.9 15.9037ZM14.7164 17.2221C14.7848 17.808 14.1832 18.3139 13.6539 18.1537C13.5797 18.2826 13.5231 18.4447 13.4781 18.6401C13.3785 19.0951 13.4078 18.9565 13.4508 19.3979C13.5094 19.9858 13.4469 20.3861 13.068 20.558V20.7846H5.41565V20.558C5.12072 20.4526 4.99377 20.1635 5.03869 19.6889C5.13635 18.7943 5.0758 18.5151 4.85119 18.1772C4.45666 18.1908 4.1715 18.0971 3.99377 17.8979C3.63049 17.4936 3.74182 16.9018 4.19494 16.6186C4.28869 16.56 4.39807 16.515 4.52502 16.4877C5.49768 16.2826 6.03479 17.2787 6.2926 18.0639L8.84533 18.1322C9.01916 18.1557 9.13049 18.2338 9.20471 18.3393C9.27307 18.2358 9.37268 18.1576 9.52502 18.1225C10.3199 18.0873 10.8883 18.1928 11.4684 18.1928H12.1442C12.2828 18.1928 12.3551 18.1322 12.3785 18.0209C12.5504 17.4975 13.1598 16.4467 13.7985 16.4662C14.191 16.4799 14.6188 16.7494 14.7164 17.2221ZM5.30041 16.3334C5.55822 15.7592 5.96057 15.6166 6.5094 15.808L7.09729 17.8295H6.46252C6.1676 17.2279 5.97229 16.6166 5.30041 16.3334ZM6.75744 15.8236C6.76525 15.8197 6.77111 15.8139 6.77502 15.8041C6.99182 15.3041 7.58947 15.1635 8.07775 15.3783C8.07775 15.3764 8.07971 15.3764 8.07971 15.3764L8.21252 17.9506H7.36682L6.75744 15.8236ZM8.33947 15.3236C8.49768 14.6654 9.99768 14.8002 10.1363 15.2533C10.1559 15.2514 9.9801 17.683 9.96838 17.9526H9.74572C9.39416 17.9526 9.08361 17.9526 8.73596 17.9526H8.45471L8.34533 15.3236H8.33947ZM10.3317 15.435C10.3356 15.435 10.3414 15.433 10.3473 15.4311C10.8903 15.142 11.6461 15.3529 11.7184 15.7299L11.6813 15.7436L11.0856 17.9506H10.2047L10.3317 15.435ZM18.1305 16.5326V20.1166H18.8531C18.9645 20.1166 19.0543 20.2475 19.0543 20.3588C19.0543 20.4701 18.9645 20.601 18.8531 20.601H16.8512C16.7399 20.601 16.65 20.4701 16.65 20.3588C16.65 20.2475 16.7399 20.1166 16.8512 20.1166H17.5738V16.5326H18.1305ZM16.8141 13.8178H18.8844L19.4918 16.2143H16.2106L16.8141 13.8178ZM21.027 21.7748V11.0092C21.027 10.9858 21.0289 10.9623 21.0328 10.9408L12.0348 4.94669L2.86291 10.9428C2.87072 10.9721 2.87463 11.0033 2.87463 11.0346V21.7748C8.92541 21.7748 14.9762 21.7748 21.027 21.7748Z" fill="#699FC9"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-906 -360)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="1440" height="2686" fill="white" transform="translate(-906 -360)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                   <Link  >
+
+
+
+                     <h2 className="text-[#699FC9] text-[0.995rem]">
+                     Total room
+                     </h2>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+
+             <div className="p-2 md:h-[60px] md:w-w-full h-16 w-full text-center">
+               <div className="h-full flex   border p-2.5 hover:bg-gray-50 active:bg-gray-100 cursor-pointer bg-white rounded-lg">
+                 <div className="   flex justify-center mr-4 "></div>
+                 <div className="flex gap-5">
+
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<g id="SVGRepo_iconCarrier">
+<path id="Vector" d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#699FC9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
+                   <Link  >
+
+
+
+                     <h2 className="text-[#699FC9] text-[0.995rem]">
+                       Search
+                     </h2>
+                   </Link>
+                 </div>
+               </div>
+             </div>
+             {/* Images */}
+           </div>
+         </div>
+       </section>
+
+        {/* Button Section End */}
+      </div>
+
+    
+      <div className="flex md:flex-row flex-col-reverse">
+        <div className=" md:w-1/6 w-full flex md:flex-col flex-row ">
+          <div className="p-2  h-[900px] w-full  bg-[#E4F0FF] ">
+            <div className="inline">
+              <h1 className="p-2.5  text-sm md:text-2xl font-normal">Rating</h1>
+
+              <div className="flex items-center">
+                <input type="checkbox" className="mx-2 my-2   " />
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+              </div>
+
+              <div className="flex items-center">
+                <input type="checkbox" className="mx-2 my-2 " />
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+              </div>
+
+              <div className="flex items-center">
+                <input type="checkbox" className="mx-2 my-2  " />
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+              </div>
+
+              <div className="flex items-center">
+                <input type="checkbox" className="mx-2 my-2  " />
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+              </div>
+
+              <div className="flex items-center">
+                <input type="checkbox" className="mx-2 my-2   " />
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 16 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Star 1"
+                    d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                    fill="#FFE033"
+                  />
+                </svg>
+              </div>
+
+              <h1 className="md:px-2.5 mt-5  md:text-2xl text-sm font-normal">
+                Price
+              </h1>
+
+              <h1 className="md:px-2.5 px-0 py-2 text-[#A5A5A5] text-xs md:text-sm font-normal">
+                Rs 15,000 -Rs 20,000{" "}
+              </h1>
+
+              <input type="range" className="w-16 md:w-full" />
+              <br />
+
+              <h1 className="md:px-2.5 px-0 md:text-lg text-xs font-normal">
+                DISTANCE
+              </h1>
+
+              <h1 className="md:px-2.5 px-0 p-3 text-[#A5A5A5] text-xs md:text-smfont-normal">
+                1000M-300M{" "}
+              </h1>
+
+              <input type="range" className="w-16 md:w-full" />
+
+              <br />
+
+              <h1 className="md:px-2.5 px-0 md:text-lg text-xs font-normal">
+                ROOM TYPE
+              </h1>
+
+              <div className="flex  flex-wrap py-3  ">
+                <label
+                  className="font-normal mx-2 text-[#3C3C3C] text-xs  md:text-xs"
+                  htmlFor="yes"
+                >
+                  SHARED
+                </label>
+                <input type="radio" name="visa" id="yes" />
+                <label
+                  className="font-normal text-[#3C3C3C]  mx-2  text-xs md:text-xs"
+                  htmlFor="no"
+                >
+                  PRIVATE
+                </label>
+                <input type="radio" name="visa" id="no" />
+              </div>
+
+              <h1 className="md:px-2.5 px-0 md:text-sm text-xs  ">
+                SAHRED TOTAL BED
+              </h1>
+
+              <select
+                className="md:px-2 outline-none text-[8px] md:text-sm py-3 bg-transparent"
+                required
+              >
+                <option selected disabled>
+                  5 BED ROOM
+                </option>
+
+                <option value="">2 BED ROOM</option>
+                <option value="">3 BED ROOM</option>
+                <option value="">4 BED ROOM</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:w-5/6 w-full">
+          <div className="flex justify-around flex-col md:flex-row items-center w-full  ">
+            <div className=" border    justify-between border-gray-400  outline-none md:p-5 p-4 mt-10 rounded-sm h-10 md:w-[235px] w-64  md:m-5 m-0 flex items-center  ">
+              <svg
+                width="23"
+                height="23"
+                className="z-50"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="ic:sharp-search">
+                  <path
+                    id="Vector"
+                    d="M12.9167 11.6667H12.2583L12.025 11.4417C12.8699 10.4617 13.3343 9.21058 13.3333 7.91667C13.3333 6.84535 13.0157 5.7981 12.4205 4.90733C11.8253 4.01656 10.9793 3.3223 9.98954 2.91232C8.99977 2.50235 7.91066 2.39508 6.85993 2.60408C5.8092 2.81309 4.84404 3.32897 4.08651 4.08651C3.32897 4.84404 2.81309 5.8092 2.60408 6.85993C2.39508 7.91066 2.50235 8.99977 2.91232 9.98954C3.3223 10.9793 4.01656 11.8253 4.90733 12.4205C5.7981 13.0157 6.84535 13.3333 7.91667 13.3333C9.25834 13.3333 10.4917 12.8417 11.4417 12.025L11.6667 12.2583V12.9167L15.8333 17.075L17.075 15.8333L12.9167 11.6667ZM7.91667 11.6667C5.84167 11.6667 4.16667 9.99167 4.16667 7.91667C4.16667 5.84167 5.84167 4.16667 7.91667 4.16667C9.99167 4.16667 11.6667 5.84167 11.6667 7.91667C11.6667 9.99167 9.99167 11.6667 7.91667 11.6667Z"
+                    fill="#A5A5A5"
+                  />
+                </g>
+              </svg>
+
+              <input
+                type="text"
+                placeholder="Search Makkah Hotels "
+                className="bg-transparent  placeholder:text-sm outline-none w-40"
+                name=""
+                id=""
+              />
+            </div>
+
+            <h1
+              id="heading"
+              className=" font-bold text-black  py-8 text-center lg:text-[25px] md:text-[20px]"
+            >
+              Makkah Hotel
+            </h1>
+
+            <input
+              type="text"
+              placeholder="Sort by : Price - low to high"
+              className="border hidden md:block bg-transparent border-gray-400 placeholder:text-sm outline-none md:p-5 rounded-sm h-10 md:w-[220px] w-40   "
+              readOnly
+            />
+          </div>
+
+
+
+
+<div className="w-[100%] justify-center items-center flex flex-wrap ">
+
+<div className="w-full justify-center items-center flex flex-col md:flex-row mx-auto ">
+          
+            <div className="p-2 md:w-[50%] w-full ">
+              <div>
+                <div
+                  onClick={() => cardDetails()}
+                  className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img src={Hotel1} alt="" className="w-full" />
+                  </a>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Al Faris Hotel
+                    </h5>
+
+                    <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                      200 meter from masjid al haram
+                    </p>
+
+                    <div className="flex flex-wrap items-center gap-1">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <p className="font-bold text-black">
+                        5.0{" "}
+                        <span className="font-normal text-[#A5A5A5]">
+                          (9000 reviews)
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center mt-5 justify-between">
+                      <p className="text-black text-sm font-bold">
+                        PKR 15,000 for 10Nights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-2 md:w-[50%] w-full ">
+              <div>
+                <div
+                  onClick={() => cardDetails()}
+                  className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img src={Hotel2} alt="" className="w-full" />
+                  </a>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Al Faris Hotel
+                    </h5>
+
+                    <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                      200 meter from masjid al haram
+                    </p>
+
+                    <div className="flex flex-wrap items-center gap-1">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <p className="font-bold text-black">
+                        5.0{" "}
+                        <span className="font-normal text-[#A5A5A5]">
+                          (9000 reviews)
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center mt-5 justify-between">
+                      <p className="text-black text-sm font-bold">
+                        PKR 15,000 for 10Nights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+        
+          <div className="w-full justify-center items-center flex flex-col md:flex-row mx-auto ">
+          
+          <div className="p-2 md:w-[50%] w-full ">
+            <div>
+              <div
+                onClick={() => cardDetails()}
+                className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <img src={Hotel3} alt="" className="w-full" />
+                </a>
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Al Faris Hotel
+                  </h5>
+
+                  <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                    200 meter from masjid al haram
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-1">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <p className="font-bold text-black">
+                      5.0{" "}
+                      <span className="font-normal text-[#A5A5A5]">
+                        (9000 reviews)
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap items-center mt-5 justify-between">
+                    <p className="text-black text-sm font-bold">
+                      PKR 15,000 for 10Nights
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-2 md:w-[50%] w-full ">
+            <div>
+              <div
+                onClick={() => cardDetails()}
+                className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <img src={Hotel5} alt="" className="w-full" />
+                </a>
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Al Faris Hotel
+                  </h5>
+
+                  <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                    200 meter from masjid al haram
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-1">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <p className="font-bold text-black">
+                      5.0{" "}
+                      <span className="font-normal text-[#A5A5A5]">
+                        (9000 reviews)
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap items-center mt-5 justify-between">
+                    <p className="text-black text-sm font-bold">
+                      PKR 15,000 for 10Nights
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div className="w-full justify-center items-center flex flex-col md:flex-row mx-auto ">
+          
+          <div className="p-2 md:w-[50%] w-full ">
+            <div>
+              <div
+                onClick={() => cardDetails()}
+                className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <img src={Hotel6} alt="" className="w-full" />
+                </a>
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Al Faris Hotel
+                  </h5>
+
+                  <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                    200 meter from masjid al haram
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-1">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <p className="font-bold text-black">
+                      5.0{" "}
+                      <span className="font-normal text-[#A5A5A5]">
+                        (9000 reviews)
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap items-center mt-5 justify-between">
+                    <p className="text-black text-sm font-bold">
+                      PKR 15,000 for 10Nights
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="p-2 md:w-[50%] w-full ">
+            <div>
+              <div
+                onClick={() => cardDetails()}
+                className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <img src={Hotel4} alt="" className="w-full" />
+                </a>
+                <div className="p-5">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Al Faris Hotel
+                  </h5>
+
+                  <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                    200 meter from masjid al haram
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-1">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 16 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Star 1"
+                        d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                        fill="#FFE033"
+                      />
+                    </svg>
+
+                    <p className="font-bold text-black">
+                      5.0{" "}
+                      <span className="font-normal text-[#A5A5A5]">
+                        (9000 reviews)
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap items-center mt-5 justify-between">
+                    <p className="text-black text-sm font-bold">
+                      PKR 15,000 for 10Nights
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          {/* <div className="w-full flex flex-col md:flex-row mx-auto ">
+          
+            <div className="p-4 ">
+              <div>
+                <div
+                  onClick={() => cardDetails()}
+                  className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img src={Hotel1} alt="" />
+                  </a>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Al Faris Hotel
+                    </h5>
+
+                    <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                      200 meter from masjid al haram
+                    </p>
+
+                    <div className="flex flex-wrap items-center gap-1">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <p className="font-bold text-black">
+                        5.0{" "}
+                        <span className="font-normal text-[#A5A5A5]">
+                          (9000 reviews)
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center mt-5 justify-between">
+                      <p className="text-black text-sm font-bold">
+                        PKR 15,000 for 10Nights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-4 ">
+              <div>
+                <div
+                  onClick={() => cardDetails()}
+                  className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <a href="#">
+                    <img src={Hotel1} alt="" />
+                  </a>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      Al Faris Hotel
+                    </h5>
+
+                    <p className="mb-3 font-normal text-sm text-[#A5A5A5] dark:text-gray-400">
+                      200 meter from masjid al haram
+                    </p>
+
+                    <div className="flex flex-wrap items-center gap-1">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 16 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="Star 1"
+                          d="M7.52447 0.463526C7.67415 0.0028708 8.32585 0.00286996 8.47553 0.463525L9.90837 4.87336C9.97531 5.07937 10.1673 5.21885 10.3839 5.21885H15.0207C15.505 5.21885 15.7064 5.83865 15.3146 6.12336L11.5633 8.84878C11.3881 8.9761 11.3148 9.20179 11.3817 9.4078L12.8145 13.8176C12.9642 14.2783 12.437 14.6613 12.0451 14.3766L8.29389 11.6512C8.11865 11.5239 7.88135 11.5239 7.70611 11.6512L3.95488 14.3766C3.56303 14.6613 3.03578 14.2783 3.18546 13.8176L4.6183 9.4078C4.68524 9.20179 4.61191 8.9761 4.43667 8.84878L0.685441 6.12336C0.293584 5.83866 0.494972 5.21885 0.979333 5.21885H5.6161C5.83272 5.21885 6.02469 5.07937 6.09163 4.87336L7.52447 0.463526Z"
+                          fill="#FFE033"
+                        />
+                      </svg>
+
+                      <p className="font-bold text-black">
+                        5.0{" "}
+                        <span className="font-normal text-[#A5A5A5]">
+                          (9000 reviews)
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center mt-5 justify-between">
+                      <p className="text-black text-sm font-bold">
+                        PKR 15,000 for 10Nights
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+</div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Makkah;

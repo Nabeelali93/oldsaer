@@ -1,0 +1,29 @@
+body{
+    font-family: 'Poppins';
+    
+    
+}
+
+
+.footer-inp{
+    outline: none;
+    padding: 11px 20px 10px 14px;
+    border-radius: 10px ;
+background: #FFF;
+}
+.footer-btn{
+    display: inline-flex;
+    padding: 11px 14px 10px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px ;
+background: #699FC9;
+}
+
+
+@media only screen and (max-width:600px){
+.footer-inp{
+width: 100%;
+}
+
+}

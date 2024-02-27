@@ -1,0 +1,28 @@
+ #logo{
+    font-family: 'Eczar', serif;
+}
+/* #package_heading{
+    font-family: 'Poppins', sans-serif;
+}
+
+#find_Best_deal{
+    font-family: 'Poppins', sans-serif;
+}  */
+
+
+body{
+    font-family: 'Eczar', serif;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+.react-datepicker__input-container input::placeholder {
+    color: black;
+
+  }
+
+ 
+
+  
